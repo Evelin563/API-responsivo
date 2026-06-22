@@ -9,128 +9,144 @@
 <body>
 
   <header class="header">
-    <div class="logo">Agência Criativa Web</div>
+    <div class="header__container container">
+      <div class="header__logo">Agência Criativa Web</div>
 
-    <button class="menu-btn" id="menuBtn">☰</button>
+      <button class="header__menu-button" id="menuButton">☰</button>
 
-    <nav class="nav" id="navMenu">
-      <a href="#home">Home</a>
-      <a href="#sobre">Sobre Nós</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#depoimentos">Depoimentos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+      <nav class="nav" id="navMenu">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#sobre">Sobre Nós</a></li>
+          <li><a class="nav__link" href="#servicos">Serviços</a></li>
+          <li><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+          <li><a class="nav__link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="home" class="home">
-    <div class="home-texto">
-      <h1>Design digital com elegância, estratégia e impacto.</h1>
-      <p>
-        Criamos experiências visuais modernas para marcas que desejam se destacar
-        com presença forte, sofisticada e memorável.
-      </p>
-      <a href="#contato" class="btn">Comece seu projeto</a>
-    </div>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <h1 class="hero__title">Design digital com elegância, estratégia e impacto.</h1>
+          <p class="hero__description text">
+            Criamos experiências visuais modernas para marcas que desejam se destacar
+            com presença forte, sofisticada e memorável.
+          </p>
+          <a href="#contato" class="button">Comece seu projeto</a>
+        </div>
 
-    <picture>
-      <source srcset="01.jpg" media="(max-width: 600px)">
-      <img src="01.jpg" alt="Imagem temática Zhongli" class="hero-img">
-    </picture>
-  </section>
-
-  <section id="sobre" class="sobre">
-    <div>
-      <h2>Sobre Nós</h2>
-      <p>
-        A Agência Criativa Web une design, tecnologia e identidade visual para
-        transformar ideias em interfaces vivas. Nosso estilo mistura precisão,
-        beleza e narrativa — como pedra lapidada em ouro.
-      </p>
-      <p>
-        Valorizamos criatividade, confiança, inovação e estética profissional.
-      </p>
-    </div>
-
-    <img src="02.jpg" alt="Imagem decorativa Zhongli">
-  </section>
-
-  <section id="servicos" class="servicos">
-    <h2>Nossos Serviços</h2>
-
-    <div class="grid-servicos">
-      <div class="card">
-        <img src="03.jpg" alt="Design gráfico">
-        <h3>Design Gráfico</h3>
-        <p>Artes visuais, posts, banners e materiais digitais.</p>
+        <picture>
+          <source srcset="01.jpg" media="(max-width: 600px)">
+          <img class="hero__image" src="01.jpg" alt="Imagem temática Zhongli">
+        </picture>
       </div>
+    </section>
 
-      <div class="card">
-        <img src="04.jpg" alt="Desenvolvimento web">
-        <h3>Desenvolvimento Web</h3>
-        <p>Sites responsivos, modernos e funcionais.</p>
+    <section class="about section" id="sobre">
+      <div class="about__container container">
+        <div class="about__content">
+          <h2 class="section__title">Sobre Nós</h2>
+          <p class="text">
+            A Agência Criativa Web une design, tecnologia e identidade visual para
+            transformar ideias em interfaces vivas. Nosso estilo mistura precisão,
+            beleza e narrativa — como pedra lapidada em ouro.
+          </p>
+          <p class="text">
+            Valorizamos criatividade, confiança, inovação e estética profissional.
+          </p>
+        </div>
+
+        <img class="about__image" src="02.jpg" alt="Imagem decorativa Zhongli">
       </div>
+    </section>
 
-      <div class="card">
-        <img src="05.jpg" alt="Branding">
-        <h3>Branding</h3>
-        <p>Identidade visual, logotipo e posicionamento de marca.</p>
+    <section class="services section" id="servicos">
+      <div class="container">
+        <h2 class="section__title">Nossos Serviços</h2>
+
+        <div class="services__grid">
+          <article class="service-card">
+            <img class="service-card__image" src="03.jpg" alt="Design gráfico">
+            <h3 class="service-card__title">Design Gráfico</h3>
+            <p class="service-card__description">Artes visuais, posts, banners e materiais digitais.</p>
+          </article>
+
+          <article class="service-card">
+            <img class="service-card__image" src="04.jpg" alt="Desenvolvimento web">
+            <h3 class="service-card__title">Desenvolvimento Web</h3>
+            <p class="service-card__description">Sites responsivos, modernos e funcionais.</p>
+          </article>
+
+          <article class="service-card">
+            <img class="service-card__image" src="05.jpg" alt="Branding">
+            <h3 class="service-card__title">Branding</h3>
+            <p class="service-card__description">Identidade visual, logotipo e posicionamento de marca.</p>
+          </article>
+
+          <article class="service-card">
+            <img class="service-card__image" src="06.jpg" alt="UI UX">
+            <h3 class="service-card__title">UI/UX Design</h3>
+            <p class="service-card__description">Interfaces bonitas, intuitivas e pensadas para o usuário.</p>
+          </article>
+
+          <article class="service-card">
+            <img class="service-card__image" src="07.jpg" alt="Marketing digital">
+            <h3 class="service-card__title">Marketing Digital</h3>
+            <p class="service-card__description">Estratégias para fortalecer sua presença online.</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <img src="06.jpg" alt="UI UX">
-        <h3>UI/UX Design</h3>
-        <p>Interfaces bonitas, intuitivas e pensadas para o usuário.</p>
+    <section class="testimonials section" id="depoimentos">
+      <div class="container">
+        <h2 class="section__title">Depoimentos</h2>
+
+        <div class="testimonials__list">
+          <article class="testimonial-card">
+            <p class="testimonial-card__text">“A agência transformou completamente a imagem da minha marca.”</p>
+            <span class="testimonial-card__author">— Mariana Costa</span>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-card__text">“O site ficou elegante, rápido e perfeito para celulares.”</p>
+            <span class="testimonial-card__author">— Rafael Mendes</span>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-card__text">“Profissionalismo absoluto. Visual digno de contrato com os deuses.”</p>
+            <span class="testimonial-card__author">— Clara Nunes</span>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <img src="07.jpg" alt="Marketing digital">
-        <h3>Marketing Digital</h3>
-        <p>Estratégias para fortalecer sua presença online.</p>
+    <section class="contact section" id="contato">
+      <div class="container">
+        <h2 class="section__title">Contato</h2>
+
+        <div class="contact__container">
+          <div class="contact__info">
+            <p class="contact__item text"><strong>Endereço:</strong> Rua Dourada, 777 - Liyue Digital</p>
+            <p class="contact__item text"><strong>Telefone:</strong> (46) 99999-9999</p>
+            <p class="contact__item text"><strong>E-mail:</strong> contato@agenciacriativaweb.com</p>
+          </div>
+
+          <form class="contact__form form">
+            <input class="form__field" type="text" placeholder="Seu nome" required>
+            <input class="form__field" type="email" placeholder="Seu e-mail" required>
+            <textarea class="form__field form__field--textarea" placeholder="Sua mensagem" required></textarea>
+            <button class="button form__button" type="submit">Enviar mensagem</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <section id="depoimentos" class="depoimentos">
-    <h2>Depoimentos</h2>
-
-    <div class="depoimentos-box">
-      <div class="depoimento">
-        <p>“A agência transformou completamente a imagem da minha marca.”</p>
-        <span>— Mariana Costa</span>
-      </div>
-
-      <div class="depoimento">
-        <p>“O site ficou elegante, rápido e perfeito para celulares.”</p>
-        <span>— Rafael Mendes</span>
-      </div>
-
-      <div class="depoimento">
-        <p>“Profissionalismo absoluto. Visual digno de contrato com os deuses.”</p>
-        <span>— Clara Nunes</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato" class="contato">
-    <h2>Contato</h2>
-
-    <div class="contato-container">
-      <div class="info">
-        <p><strong>Endereço:</strong> Rua Dourada, 777 - Liyue Digital</p>
-        <p><strong>Telefone:</strong> (46) 99999-9999</p>
-        <p><strong>E-mail:</strong> contato@agenciacriativaweb.com</p>
-      </div>
-
-      <form>
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <textarea placeholder="Sua mensagem" required></textarea>
-        <button type="submit">Enviar mensagem</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
+  <footer class="footer">
     <p>© 2026 Agência Criativa Web — Design sólido como pedra, brilhante como ouro.</p>
   </footer>
 

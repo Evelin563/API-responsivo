@@ -1,14 +1,13 @@
-const menuBtn = document.getElementById("menuBtn");
-const navMenu = document.getElementById("navMenu");
+const menuButton = document.querySelector("#menuButton");
+const navMenu = document.querySelector("#navMenu");
+const navLinks = document.querySelectorAll(".nav__link");
 
-menuBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("ativo");
+menuButton.addEventListener("click", () => {
+  navMenu.classList.toggle("nav--active");
 });
 
-const links = document.querySelectorAll(".nav a");
-
-links.forEach(link => {
+navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    navMenu.classList.remove("ativo");
+    navMenu.classList.remove("nav--active");
   });
 });
